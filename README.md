@@ -47,3 +47,12 @@ ai‑os/
 ├─ docs/         # White paper & documentation
 ├─ scripts/      # Helper scripts
 └─ tests/        # Validation and safety tests
+
+
+## Agent Contract (Draft)
+Agents in AI‑OS must:
+1. Declare intent before action
+2. Request approval for execution
+3. Operate inside a sandbox
+4. Log every action
+5. Be replaceable and testable
