@@ -1,39 +1,31 @@
 # AI‑OS
 
-AI‑OS is a multi‑agent, voice‑enabled operating system layer designed to safely automate, orchestrate, and execute tasks across local and cloud environments. [1](https://algotradez-my.sharepoint.com/personal/ai_tradeplatform_algotradez_onmicrosoft_com/Documents/READme.pdf)
+AI‑OS is a multi‑agent, voice‑enabled operating system layer for safely automating, orchestrating, and executing tasks across local and cloud environments.
 
 ---
 
 ## What AI‑OS Is
-AI‑OS combines:
-- A **local execution agent**
-- **Cloud orchestration**
-- **Multi‑agent intelligence**
-- A **plugin framework**
-- **Voice + UI control**
+AI‑OS lets humans describe goals in natural language while agents plan, coordinate, and execute actions under strict approval, security, and audit rules.
 
-The system allows users to describe goals in natural language while retaining human approval, visibility, and security at every step. [1](https://algotradez-my.sharepoint.com/personal/ai_tradeplatform_algotradez_onmicrosoft_com/Documents/READme.pdf)
-
----
-
-## Core Agents
-AI‑OS is composed of specialized agents, each with a defined role:
-- **Nova** – planning and decomposition
-- **Iron / Viper** – command and action routing
-- **Delta** – security and policy enforcement
-- **Byte** – execution
-- **Star** – narration and feedback
-
-Agents coordinate through an event‑driven orchestrator. [1](https://algotradez-my.sharepoint.com/personal/ai_tradeplatform_algotradez_onmicrosoft_com/Documents/READme.pdf)
+It combines:
+- A local execution agent
+- Cloud orchestration
+- Specialized agents
+- A plugin framework
+- A UI / voice control layer
 
 ---
 
-## High‑Level System Flow
-1. User issues a request (text or voice)
-2. Cloud orchestrator decomposes the task
-3. Agents coordinate via the event bus
-4. Local agent executes approved actions
-5. UI updates with logs, status, and results [1](https://algotradez-my.sharepoint.com/personal/ai_tradeplatform_algotradez_onmicrosoft_com/Documents/READme.pdf)
+## Core Principles
+- Human‑in‑the‑loop by default
+- Declarative intent before execution
+- Least‑privilege execution
+- Full observability and auditability
+
+---
+
+## High‑Level Flow
+User → UI / Voice → Orchestrator → Agents → Local Execution → Logs → UI
 
 ---
 
@@ -41,18 +33,13 @@ Agents coordinate through an event‑driven orchestrator. [1](https://algotradez
 ```text
 ai‑os/
 ├─ agent/        # Local execution agent
-├─ services/     # Cloud orchestration services
+├─ services/     # Cloud orchestration & APIs
 ├─ apps/         # UI / dashboard
 ├─ plugins/      # Capability extensions
 ├─ docs/         # White paper & documentation
 ├─ scripts/      # Helper scripts
-└─ tests/        # Validation and safety tests
+└─ tests/        # Safety & validation tests
 
-
-## Agent Contract (Draft)
-Agents in AI‑OS must:
-1. Declare intent before action
-2. Request approval for execution
-3. Operate inside a sandbox
-4. Log every action
-5. Be replaceable and testable
+## User Interface
+AI‑OS is controlled through a browser‑based dashboard that acts as the system control plane.
+The UI is responsible for visibility, approvals, and orchestration — not execution.
